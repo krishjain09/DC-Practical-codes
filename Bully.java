@@ -75,3 +75,25 @@ class Bully{
         t.close();
     }
 }
+/*
+OUTPUT:
+Bully Algorithm...
+Enter number of processes: 
+5
+Enter Process Id to crash: 
+4
+Process 4 has failed.
+Enter Process id to initiate election
+2
+
+Process 2 initiates the election process.
+Election message sent from Process 2 to Process 3.
+Process 3 sends OK message to 2.
+
+Process 3 initiates the election process.
+
+Process 3 is elected as new coordinator.
+CO-ORDINATOR message sent from Process 3 to Process 0.
+CO-ORDINATOR message sent from Process 3 to Process 1.
+CO-ORDINATOR message sent from Process 3 to Process 2.
+ */
