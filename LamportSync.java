@@ -58,4 +58,23 @@ class LamportSync{
             }
         }
     }
+    
 }
+
+/*
+    Lamport logical clocks provide partial ordering because they can only order events that are causally related (via same process or message passing).
+Events with no communication are independent, so their order cannot be determined.
+Short Example (Independent Events)
+P0: event A  
+P1: event B  
+(no communication)
+
+👉 No message between A and B
+
+✅ Conclusion
+A → B ❌  
+B → A ❌
+
+👉 A and B are independent (concurrent)
+No message = independent events
+ */
